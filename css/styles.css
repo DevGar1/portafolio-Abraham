@@ -7,6 +7,7 @@ body {
 
 header {
     background-image: url("../images/fondo.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -30px;
     height: 100vh;
