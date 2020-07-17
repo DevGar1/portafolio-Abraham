@@ -71,6 +71,7 @@ a {
     background-color: rgba(44, 100, 200, 0.3);
     margin-top: 220px;
     padding: 2% 0;
+    height: content-box;
 }
 
 .label a {
@@ -89,14 +90,23 @@ a {
     background-color: white;
 }
 
+.container-label {
+
+}
+
 
 section {
-    margin: 6%;
+    margin-top: 26%;
+    margin-left: 6%;
+    margin-right: 6%;
     padding: 2%;
     background: #ffffff;
     border-radius: 7px;
     text-align: center;
     color: #000000;
+    -webkit-box-shadow: 0 -1px 40px -7px rgba(255,255,255,1);
+    -moz-box-shadow: 0 -1px 40px -7px rgba(255,255,255,1);
+    box-shadow: 0 -1px 40px -7px rgba(255,255,255,1);
 }
 .information {
     text-align: justify;
@@ -109,12 +119,33 @@ h3 {
     font-size: 350%;
 }
 
-section img {
+.Iam {
     border-radius: 100%;
     width: 45%;
     margin-bottom: 3%;
 }
 
+
+h4 {
+    font-size: 350%;
+    margin-bottom: 30px;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+
+}
+
+#projects > div {
+    width: 90%;
+    margin: 0 auto;
+    border: darkorange 2px solid;
+}
+#projects div img {
+    width: 100%;
+    border-radius: 10px;
+ }
 
 
 
