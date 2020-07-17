@@ -7,11 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <script src="js/functions.js"></script>
     <script src="js/git.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
-<body>
-<header>
+<body onload="git()" >
+<header style="background-image: url('im/fondo-min.jpg')">
     <div class="bar">
         <p>Abraham García</p>
         <nav>
@@ -30,26 +29,44 @@
         subject=Información">Contáctame</a>
     </div>
 </header>
-<section  id="about-me">
-    <h3>Sobre mi</h3>
-    <div class="about">
-        <div id="im">
-            <img id="image" src="images/abraham.jpg" alt="Una foto de abraham">
+<main>
+    <section id="about-me">
+        <h3>Sobre mi</h3>
+        <img src="im/abraham-min.jpg" alt="Imagen del autor">
+        <div class="information">
+            <p>
+
+                Soy un desarrollador web con 6 meses de experiencia en el área laboral. Actualmente trabajo en el área
+                de tecnología de un despacho de contadores y abogados llamado TAXSAT, en donde me desenvuelvo creando
+                aplicaciones web y tengo participación tanto en el lado del servidor, como en la parte del cliente.
+            </p>
+            <p>
+                Entre los conocimientos que he adquirido se pueden destacar los siguientes:
+            </p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Typescript</li>
+                <li>Angular</li>
+                <li>Lenguaje C</li>
+                <li>NestJS</li>
+                <li>Manejo básico de linux</li>
+            </ul>
         </div>
 
-        <div class="information">
-            <button onclick="experience(this)"
-                    onmouseout="experienceOut()">
-                Experiencia
-            </button>
-            <button onclick="skills()" onmouseout="experienceOut()">Conocimientos</button>
-            <button onclick="softskills()" onmouseout="experienceOut()">Aptitudes</button>
+    </section>
+
+
+    <section id="git">
+        <div>
+            dsafddddddddddddddddddddddddddddddd Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur
+            autem consequatur, debitis exercitationem ipsum nesciunt repudiandae sequi velit vero! Deleniti dignissimos
+            eligendi inventore labore minus nisi officiis quasi vitae.
         </div>
-    </div>
-</section>
-<section onmouseover="git()" id="git">
-dsfdsafdadsafdsadf
-</section>
+    </section>
+
+</main>
 
 
 </body>

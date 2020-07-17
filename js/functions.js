@@ -11,7 +11,7 @@ function experience() {
     element.style.textAlign = 'left';
     element.style.display = 'flex';
     element.style.flexDirection = 'column';
-    element.style.padding = '10px';
+    element.style.padding = '15px';
     element.style.borderRadius = '15px';
     element.style.background = 'rgba(44, 100, 200, 0.3)';
     element.style.transitionn = 'all';
@@ -27,8 +27,8 @@ function skills() {
     element.style.background = 'white';
     element.innerHTML = "<p>Tengo conocimientos en :</p>" +
         "<ul>" +
-        "<li>Html</li>" +
-        "<li>Css</li>" +
+        "<li>HTML</li>" +
+        "<li>CSS</li>" +
         "<li>Javascript</li>" +
         "<li>Typescript</li>" +
         "<li>Angular</li>" +
@@ -73,6 +73,6 @@ function softskills() {
 function experienceOut() {
     const element = document.getElementById('im');
     element.style.background = 'none';
-    element.innerHTML = "  <img id=\"image\" src=\"images/abraham.jpg\" alt=\"Una foto de abraham\">\n";
+    element.innerHTML = "  <img id=\"image\" src=\"/im/abraham-min.jpg\" alt=\"Una foto de abraham\">\n";
     element.style.borderRadius = '5px';
 }
