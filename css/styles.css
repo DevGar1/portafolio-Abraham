@@ -137,7 +137,7 @@ button {
     cursor: pointer;
     font-size: 260%;
     padding: 12px 20px;
-    transition: all 1s linear;
+    transition: all .1s linear;
     margin: 2% 15%;
 }
 button:active {
