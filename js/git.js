@@ -17,7 +17,8 @@ function git() {
             .then(repos => {
                 for (const repo of repos) {
                     if (repo.name !== 'portafolio-Abraham') {
-                        const div = document.createElement('div')
+                        const div = document.createElement('div');
+                        div.style.padding = '3%';
                         const h4 = document.createElement('h4');
                         h4.innerText = repo.name;
                         h4.style.marginTop = '13px';

@@ -90,32 +90,26 @@ a {
     background-color: white;
 }
 
-.container-label {
-
-}
-
-
 section {
-    margin-top: 26%;
-    margin-left: 6%;
-    margin-right: 6%;
+    width: 80%;
+    margin: 25% auto;
     padding: 2%;
-    background: #ffffff;
-    border-radius: 7px;
+    background: #000000;
+    border-radius: 15px;
     text-align: center;
-    color: #000000;
-    -webkit-box-shadow: 0 -1px 40px -7px rgba(255,255,255,1);
-    -moz-box-shadow: 0 -1px 40px -7px rgba(255,255,255,1);
-    box-shadow: 0 -1px 40px -7px rgba(255,255,255,1);
+    color: #ffffff;
+    -webkit-box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
+    -moz-box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
+    box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
 }
 .information {
     text-align: justify;
     padding: 0 8%;
     margin-bottom: 70px;
-    font-size: 24px;
+    font-size: 32px;
 }
 h3 {
-    margin: 100px;
+    margin: 60px;
     font-size: 350%;
 }
 
@@ -129,32 +123,42 @@ h3 {
 
 h4 {
     font-size: 280%;
-    margin-top: 0;
+    margin-top: 13px;
 }
 
 #projects {
     display: grid;
     grid-template-columns:  1fr 1fr;
+}
 
+#git {
+    border: hidden;
+    box-shadow: none;
 }
 
 #projects > div {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    padding: 3%;
     border-radius: 9px;
-    -webkit-box-shadow: 0 -3px 5px 1mm rgba(44, 100, 200, 0.9);
-    -moz-box-shadow: 0 -3px 5px 1mm rgba(44, 100, 200, 0.9);
-    box-shadow: -3px -3px 5px 1mm rgba(44, 100, 200, 0.9);
-    border: rgba(44, 100, 200, 0.9) solid 3px;
+    -webkit-box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
+    -moz-box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
+    box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
+
+    display: grid;
+    grid-template-rows: 50px 180px 1fr 180px;
+
 }
 
 #projects div img {
     width: 90%;
+    height: 200px;
+    margin: 0 auto;
     border-radius: 4px;
 }
 
 #projects div p {
-    font-size: 180%;
+    font-size: 32px;
 }
 
 #projects div a {
@@ -164,7 +168,7 @@ h4 {
 }
 
 #projects div a:hover {
-    color: red;
+    color: rgba(44, 100, 200, 0.9);
 }
 
 footer {
@@ -181,19 +185,190 @@ footer {
 
 }
 
-#social > i {
-    margin-left: 60px;
+#social > a i {
+    margin-left: 30px;
 }
 
+
 #social p {
-   align-self: flex-end;
-    margin-left: 25%;
-    font-size: 160%;
+    align-self: flex-end;
+    margin-right: 15px;
+    margin-left: auto;
+    font-size: 140%;
 }
 
 #projects div a i {
     margin: 40px;
 }
+
+@media (min-width: 651px) and (max-width: 900px) {
+    #git div p {
+        font-size: 25px;
+    }
+
+    #projects {
+        width: 95%;
+    }
+
+    #projects div {
+        margin: 0 15%;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 650px) {
+    header {
+        background-position-y: 0;
+    }
+
+    .bar p {
+        font-size: 270%;
+    }
+
+    .label {
+        margin-top: 80px;
+    }
+
+    .label a {
+        width: 45%;
+        height: 60px;
+    }
+
+    h3 {
+        margin: 60px;
+        font-size: 380%;
+    }
+
+    section p {
+        font-size: 35px;
+    }
+
+    #about-me p {
+        text-align: left;
+    }
+
+
+    .bar p {
+        font-size: 150%;
+    }
+
+    nav a {
+        font-size: 150%;
+    }
+
+    h1 {
+        font-size: 300%;
+    }
+
+    h2 {
+        font-size: 160%;
+    }
+
+    h3 {
+        font-size: 280%;
+    }
+
+    h4 {
+        font-size: 200%;
+    }
+
+    #projects div p {
+        font-size: 130%;
+
+    }
+
+
+    #projects {
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+
+    #projects div {
+        margin-bottom: 40px;
+
+    }
+
+
+    #social p {
+        align-self: flex-end;
+        margin-right: 5px;
+        margin-left: auto;
+        font-size: 100%;
+    }
+
+    footer a {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    section {
+        width: 90%;
+        margin: 15% auto;
+        padding: 5px;
+        height: 10%;
+    }
+
+
+    #about-me {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-me div:first-child {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Iam {
+        align-self: center;
+        justify-content: center;
+        margin: auto 10%;
+        width: 80%;
+    }
+
+    #about-me .information {
+        width: 50%;
+        margin: auto;
+    }
+
+    #about-me .information ul {
+        text-align: right;
+    }
+
+
+    #about-me p {
+        font-size: 100%;
+    }
+
+
+    #git div img {
+        width: 65%;
+    }
+
+    #projects {
+        width: 100%;
+    }
+
+    #projects > div {
+        margin: 0 auto;
+    }
+
+    footer i {
+        margin-right: 40px;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+
+
 
 
 
