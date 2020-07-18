@@ -17,9 +17,10 @@ function git() {
             .then(repos => {
                 for (const repo of repos) {
                     if (repo.name !== 'portafolio-Abraham') {
-                        const div = document.createElement('div');
+                        const div = document.createElement('div')
                         const h4 = document.createElement('h4');
                         h4.innerText = repo.name;
+                        h4.style.marginTop = '13px';
                         div.appendChild(h4);
                         const p = document.createElement('p');
                         p.textContent = gif[index].description;
@@ -40,3 +41,4 @@ function git() {
             })
         );
 }
+

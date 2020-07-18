@@ -120,6 +120,7 @@ h3 {
 }
 
 .Iam {
+    transition: all 1s;
     border-radius: 100%;
     width: 45%;
     margin-bottom: 3%;
@@ -128,7 +129,7 @@ h3 {
 
 h4 {
     font-size: 280%;
-    margin-top: 20px;
+    margin-top: 0;
 }
 
 #projects {
@@ -140,7 +141,6 @@ h4 {
 #projects > div {
     width: 80%;
     margin: 0 auto;
-    padding: 3%;
     border-radius: 9px;
     -webkit-box-shadow: 0 -3px 5px 1mm rgba(44, 100, 200, 0.9);
     -moz-box-shadow: 0 -3px 5px 1mm rgba(44, 100, 200, 0.9);
@@ -187,7 +187,8 @@ footer {
 
 #social p {
    align-self: flex-end;
-    margin-left: 30%;
+    margin-left: 25%;
+    font-size: 160%;
 }
 
 #projects div a i {
