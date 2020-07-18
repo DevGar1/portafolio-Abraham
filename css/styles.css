@@ -127,8 +127,8 @@ h3 {
 
 
 h4 {
-    font-size: 350%;
-    margin-bottom: 30px;
+    font-size: 280%;
+    margin-top: 20px;
 }
 
 #projects {
@@ -138,14 +138,29 @@ h4 {
 }
 
 #projects > div {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    border: darkorange 2px solid;
+    padding: 3%;
+    border-radius: 9px;
+    -webkit-box-shadow: 0 -3px 5px 1mm rgba(44, 100, 200, 0.9);
+    -moz-box-shadow: 0 -3px 5px 1mm rgba(44, 100, 200, 0.9);
+    box-shadow: -3px -3px 5px 1mm rgba(44, 100, 200, 0.9);
+    border: rgba(44, 100, 200, 0.9) solid 3px;
 }
+
 #projects div img {
-    width: 100%;
+    width: 90%;
     border-radius: 4px;
- }
+}
+
+#projects div a {
+    font-size: 140%;
+    color: rgba(44, 100, 200, 0.9);
+}
+
+#projects div a:hover {
+    color: red;
+}
 
 
 
