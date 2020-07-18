@@ -213,12 +213,49 @@ footer {
     #projects div {
         margin: 0 15%;
     }
+
+    .bar {
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-height: 200px) and (max-height: 500px) {
+    .label {
+        margin-top: 20px;;
+    }
+
+    .label a {
+        width: 60%;
+        height: 100px;
+        font-size: 150%;
+    }
+
+    h1 {
+        font-size: 180%;
+
+    }
+
+    h2 {
+        font-size: 180%;
+        margin: 2%;
+    }
+
+    .label {
+        height: fit-content;
+    }
+
+    .label a {
+        height: 40px;
+        width: 40%;
+    }
+
 }
 
 @media (min-width: 100px) and (max-width: 650px) {
     header {
         background-position-y: 0;
     }
+
 
     .bar p {
         font-size: 270%;
