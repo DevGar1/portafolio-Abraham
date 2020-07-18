@@ -201,9 +201,22 @@ footer {
     margin: 40px;
 }
 
+.bar i {
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
 @media (min-width: 651px) and (max-width: 900px) {
     #git div p {
         font-size: 25px;
+    }
+
+    #menu {
+        display: none;
+        justify-content: space-between;
     }
 
     #projects {
@@ -216,6 +229,21 @@ footer {
 
     .bar {
         margin-bottom: 5px;
+    }
+
+    nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .bar i:first-child {
+        display: block;
+    }
+
+    .bar i:hover {
+        background-color: red;
     }
 }
 
@@ -249,11 +277,33 @@ footer {
         width: 40%;
     }
 
+    header {
+        background-position-y: 0;
+        font-size: 12px;
+    }
+
+
 }
 
 @media (min-width: 100px) and (max-width: 650px) {
     header {
         background-position-y: 0;
+        font-size: 12px;
+    }
+
+    #projects div img {
+        width: 70%;
+    }
+
+    nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .bar i:first-child {
+        display: block;
     }
 
 
@@ -281,6 +331,11 @@ footer {
 
     #about-me p {
         text-align: left;
+        font-size: 24px;
+    }
+
+    #about-me ul li {
+        font-size: 18px;
     }
 
 
@@ -309,10 +364,9 @@ footer {
     }
 
     #projects div p {
-        font-size: 130%;
+        font-size: 24px;
 
     }
-
 
     #projects {
         display: grid;
