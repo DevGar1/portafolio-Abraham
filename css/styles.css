@@ -153,13 +153,45 @@ h4 {
     border-radius: 4px;
 }
 
+#projects div p {
+    font-size: 180%;
+}
+
 #projects div a {
-    font-size: 140%;
+    font-size: 170%;
     color: rgba(44, 100, 200, 0.9);
+    margin-bottom: 30%;
 }
 
 #projects div a:hover {
     color: red;
+}
+
+footer {
+    color: #ffffff;
+}
+
+#social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 150px;
+    margin-top: 100px;
+    width: 100%;
+
+}
+
+#social > i {
+    margin-left: 60px;
+}
+
+#social p {
+   align-self: flex-end;
+    margin-left: 30%;
+}
+
+#projects div a i {
+    margin: 40px;
 }
 
 
