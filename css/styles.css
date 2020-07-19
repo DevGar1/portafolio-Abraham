@@ -209,6 +209,18 @@ footer {
     display: none;
 }
 
+
+.pos {
+    position: fixed;
+    top: 80%;
+    right: 5%;
+
+}
+
+.pos a {
+    font-size: 3px;
+}
+
 @media (min-width: 651px) and (max-width: 900px) {
     #git div p {
         font-size: 25px;
@@ -245,11 +257,31 @@ footer {
     .bar i:hover {
         background-color: red;
     }
+
+    nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
 }
 
 @media (min-height: 200px) and (max-height: 500px) {
+
+    a {
+        width: 1%;
+        color: red;
+    }
+
     .label {
         margin-top: 20px;;
+    }
+
+    nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
     }
 
     .label a {
@@ -455,6 +487,14 @@ footer {
 
     li {
         list-style: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+   #flechas {
+        display: none;
     }
 }
 
