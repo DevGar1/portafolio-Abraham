@@ -268,10 +268,6 @@ footer {
 
 @media (min-height: 200px) and (max-height: 500px) {
 
-    a {
-        width: 1%;
-        color: red;
-    }
 
     .label {
         margin-top: 20px;;
