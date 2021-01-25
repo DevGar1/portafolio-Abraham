@@ -18,11 +18,12 @@ const gif = [
         "path": "im/aling-end.gif",
         "description": "Proyecto creado para dar una explicación sencilla sobre flex-box"
     },{
-        "path": "im/nest-1.png",
+        "path": "im/metro.png",
         "description": "Proyecto creado para dar una explicación sencilla sobre flex-box"
     },{
-        "path": "im/aling-end.gif",
+        "path": "im/nest-1.png",
         "description": "Proyecto creado para dar una explicación sencilla sobre flex-box"
+
     },{
         "path": "im/aling-end.gif",
         "description": "Proyecto creado para dar una explicación sencilla sobre flex-box"
