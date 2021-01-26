@@ -12,7 +12,7 @@ const gif = [
         "path": "im/dul.jpg",
         "description": "Proyecto creado para dar una explicación sencilla sobre flex-box"
     },{
-        "path": "im/ferreteria .jpg",
+        "path": "im/ferreteriaAdmin.jpeg",
         "description": "Proyecto creado para dar una explicación sencilla sobre flex-box"
     },{
         "path": "im/aling-end.gif",
