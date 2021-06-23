@@ -1,32 +1,56 @@
 'use strict'
-import {getInfoFromGitHub} from './git.js';
+import {
+   getInfoFromGitHub
+} from './git.js';
 const url = "https://api.github.com/users/DevGar1/repos";
 
-function fun() {
-   const img = document.getElementById('Iam');
-   img.style.transition = 'all 1s';
-   img.style.transform = "rotateY(360deg)";
+const addImg = (projects) => {
+   console.log('f')
+   let carousel = document.getElementsByClassName('carousel-inner');
+   carousel = carousel[0];
+   projects.forEach(project => {
+      const {
+         name,
+         description,
+         principalImg
+      } = project;
+      const img = document.createElement('img');
+      img.className = "d-block w-100";
+      img.src = principalImg;
+      img.alt = description;
+      img.setAttribute('data-bs-toggle', 'popover');
+      img.setAttribute('title', `${name}`);
+
+      img.setAttribute('data-bs-content', `'${description}'`);
+      img.setAttribute('data-bs-placement', `top`);
+      img.setAttribute('data-bs-trigger', "hover focus");
+      const div = document.createElement('div');
+      if (project['name'] == "Cineteca") {
+         div.className = "carousel-item active"
+      } else {
+         div.className = "carousel-item";
+      }
+      const h2 = document.createElement('h3');
+      h2.innerText = name;
+      div.append(img);
+      carousel.append(div);
+   })
 }
 
-function bar() {
-   const menu = document.getElementById('menu');
-   if (menu.style.display === 'none'){
-      menu.style.display = 'flex';
-      menu.style.justifyContent = 'space-between';
-      menu.style.transition = 'all 1s';
-   } else {
-      menu.style.transition = 'all 1s';
-      menu.style.display = 'none';
-   }
-
-}
-
-const initPage = async() => {
+const initPage = async () => {
    try {
-      const data =  await getInfoFromGitHub(url);
-      console.log(data);
-   } catch(err) {
+      const projects = await getInfoFromGitHub(url);
+      addImg(projects);
+
+   } catch (err) {
       console.log(err);
+   } finally {
+      console.log('asd');
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+         return new bootstrap.Popover(popoverTriggerEl)
+      })
+
    }
 }
 
