@@ -1,0 +1,90 @@
+@media screen and (min-width: 50px) and (max-width: 780px) {
+  body {
+    overflow-x: hidden;
+  }
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 100%;
+    text-align: center;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 100%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+
+  nav ul > * {
+    align-self: center;
+    font-size: 80%;
+  }
+
+  header img {
+    width: 110px;
+    border-radius: 1000px;
+    margin: 110px 0 40px 0;
+  }
+
+  .name-data {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  p {
+    font-size: 90%;
+    font-family: sans-serif;
+    margin-top: 27px;
+    margin-bottom: 1rem;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .caracteristicas {
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-title {
+    font-size: 10px;
+  }
+  .carousel-item {
+    height: 200px;
+    border: none
+  }
+
+  #stack {
+    width: 80%;
+  }
+
+  #social {
+    font-size: 10px;
+  }
+}

@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abraham GA | Desarrollador Web</title>
+
     <link rel="icon" href="./im/laptop-code-solid.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/plus-social.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+
 </head>
 
 <body>
@@ -34,13 +37,16 @@
                 </a>
             </ul>
         </nav>
-        <div>
-            <img src="./im/perfil.png" alt="">
+        <div class="name-data">
+            <div>
+                <img src="./im/perfil.png" alt="">
+            </div>
+            <div>
+                <h1>Abraham García</h1>
+                <h2>Desarrollador web</h2>
+            </div>
         </div>
-        <div>
-            <h1>Abraham García</h1>
-            <h2>Desarrollador web</h2>
-        </div>
+
     </header>
 
     <section>
@@ -82,7 +88,7 @@
             <div class="row">
                 <div class="col-5">
                     <div>
-                        <h2>Proyectos realizados</h2>
+                        <h2 class="project-title">Proyectos realizados</h2>
                         <p>
                             Todos los proyectos realizados se encuentran en mi respositorio de Gitgub.
                             <br>
@@ -93,7 +99,7 @@
                     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item">
-                                <img class="d-block w-100" src='./im/taxsat.gif' data-bs-toggle='popover'
+                                <img class="d-block w-100 h-100" src='./im/taxsat.gif' data-bs-toggle='popover'
                                     data-bs-content="Proyecto empresarial que realiza el seguimiento de la lista negra del artículo 69B del CFF"
                                     title="Proyecto Empresarial" data-bs-trigger="hover focus">
                             </div>
@@ -116,32 +122,28 @@
         <article id="stack">
             <div class="row">
                 <h2>Tengo experiencia con las siguientes tecnologías</h2>
-                <div class="col-10">
-                    <p>
+                <ul>
+                    <li>Angular (3 meses)</li>
+                    <li>NestJs/NodeJs (1 año)</li>
+                    <li>Javascript (1 año)</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Bases de datos relacionales</li>
+                    <li>Conocimiento básico de bases no relacionales</li>
+                    <li>Uso de la consola de Linux</li>
+                    <li>Conocimientos de S3 AWS</li>
+                    <li>Estructura de datos</li>
 
-                    </p>
-                    <ul>
-                        <li>Angular (3 meses)</li>
-                        <li>NestJs/NodeJs (1 año)</li>
-                        <li>Javascript (1 año)</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Bases de datos relacionales</li>
-                        <li>Conocimiento básico de bases no relacionales</li>
-                        <li>Uso de la consola de Linux</li>
-                        <li>Conocimientos de S3 AWS</li>
-                        <li>Estructura de datos</li>
-
-                        <div class="icons-dev">
-                            <i class="fab fa-5x fa-angular"></i>
-                            <i class="fab fa-5x fa-node-js"></i>
-                            <i class="fab fa-5x fa-js-square"></i>
-                            <i class="fab fa-5x fa-html5"></i>
-                            <i class="fab fa-5x fa-css3-alt"></i>
-                            <i class="fab fa-5x fa-java"></i>
-                            <i class="fab fa-5x fa-aws"></i>
-                        </div>
-                </div>
+                    <div class="icons-dev">
+                        <i class="fab fa-5x fa-angular"></i>
+                        <i class="fab fa-5x fa-node-js"></i>
+                        <i class="fab fa-5x fa-js-square"></i>
+                        <i class="fab fa-5x fa-html5"></i>
+                        <i class="fab fa-5x fa-css3-alt"></i>
+                        <i class="fab fa-5x fa-java"></i>
+                        <i class="fab fa-5x fa-aws"></i>
+                    </div>
+            </div>
             </div>
 
         </article>

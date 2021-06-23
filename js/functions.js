@@ -12,7 +12,8 @@ const addImg = (projects) => {
       const {
          name,
          description,
-         principalImg
+         principalImg,
+         urlPage
       } = project;
       const img = document.createElement('img');
       img.className = "d-block w-100";
@@ -20,8 +21,11 @@ const addImg = (projects) => {
       img.alt = description;
       img.setAttribute('data-bs-toggle', 'popover');
       img.setAttribute('title', `${name}`);
-
-      img.setAttribute('data-bs-content', `'${description}'`);
+      if (urlPage) {
+         img.setAttribute('data-bs-content', `'${description}' Puedes ver la página en ${urlPage}`);
+      } else {
+         img.setAttribute('data-bs-content', `'${description}'`);
+      }
       img.setAttribute('data-bs-placement', `top`);
       img.setAttribute('data-bs-trigger', "hover focus");
       const div = document.createElement('div');
