@@ -134,6 +134,20 @@ p {
 }
 
 
+.icons-dev > * {
+  margin: 15px 10px;
+  color: #000000;
+}
+
+#stack {
+  background-color: #5471ae;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+#stack h2 {
+  font-family: "Archivo Black", sans-serif;
+}
 
 
 
