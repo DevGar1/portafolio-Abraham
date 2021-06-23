@@ -1,5 +1,6 @@
 'use strict'
-
+import {getInfoFromGitHub} from './git.js';
+const url = "https://api.github.com/users/DevGar1/repos";
 
 function fun() {
    const img = document.getElementById('Iam');
@@ -19,3 +20,15 @@ function bar() {
    }
 
 }
+
+const initPage = async() => {
+   try {
+      const data =  await getInfoFromGitHub(url);
+      console.log(data);
+   } catch(err) {
+      console.log(err);
+   }
+}
+
+
+initPage();

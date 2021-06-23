@@ -1,540 +1,551 @@
 body {
-    margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
-    color: #ffffff;
-    background: #000000;
-    width: 100%;
-    overflow-x: hidden;
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+  color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
 }
-
 
 header {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -30px;
-    height: 100vh;
-    margin-bottom: 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-image: url("./../im/fondo-min.jpg");
+  display: flex;
+  padding: 3%;
+  flex-direction: column;
+  text-align: center;
 }
 
-.bar {
+header img {
+  width: 300px;
+  border-radius: 1000px;
+  margin: 45px 0 20px 0;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #000000;
+  height: 70px;
+}
+
+nav ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 95%;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: auto 0;
+    height: 100%;
+}
+
+nav ul > *{
+    align-self: center;
+    font-size: 170%;
+}
+
+
+nav a {
+    transition-delay: 200ms, 4ms;
+    text-align: center;
+}
+
+nav ul a li{
     margin: auto;
 }
 
-.bar p {
-    font-size: 250%;
+nav a:hover {
+    color: black;
+    background-color: #ffffff;
+    border-radius: 50px;
 }
 
+
+
+
+
+
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+}
+
+.bar p {
+  font-size: 250%;
+}
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
-nav a:hover {
-    color: red;
-}
+
 
 .center {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
 h1 {
-    font-size: 450%;
-    margin: 0;
+  font-size: 450%;
+  margin: 0;
 }
 
 h2 {
-    font-size: 250%;
-    margin-bottom: 40px;
+  font-size: 250%;
+  margin-bottom: 40px;
 }
 
 nav li {
-    list-style: none;
-    margin-right: 20px;
-
+  list-style: none;
+  margin-right: 20px;
 }
 
 a {
-    text-decoration: none;
-    font-size: 200%;
-    color: #ffffff;
+  text-decoration: none;
+  font-size: 200%;
+  color: #ffffff;
 }
 
 .label {
-    background-color: rgba(44, 100, 200, 0.3);
-    margin-top: 220px;
-    padding: 2% 0;
-    height: content-box;
+  background-color: rgba(44, 100, 200, 0.3);
+  margin-top: 220px;
+  padding: 2% 0;
+  height: content-box;
 }
 
 .label a {
-    display: flex;
-    background-color: rgb(44, 100, 200);
-    width: 30%;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    font-size: 200%;
+  display: flex;
+  background-color: rgb(44, 100, 200);
+  width: 30%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 200%;
 }
 
 .label a:hover {
-    color: rgb(44, 100, 200);
-    background-color: white;
+  color: rgb(44, 100, 200);
+  background-color: white;
 }
 
 section {
-    width: 80%;
-    margin: 25% auto;
-    padding: 2%;
-    background: #000000;
-    border-radius: 15px;
-    text-align: center;
-    color: #ffffff;
-    -webkit-box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
-    -moz-box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
-    box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
+  width: 80%;
+  margin: 25% auto;
+  padding: 2%;
+  background: #000000;
+  border-radius: 15px;
+  text-align: center;
+  color: #ffffff;
+  -webkit-box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
+  -moz-box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
+  box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
 }
 .information {
-    text-align: justify;
-    padding: 0 8%;
-    margin-bottom: 70px;
-    font-size: 32px;
+  text-align: justify;
+  padding: 0 8%;
+  margin-bottom: 70px;
+  font-size: 32px;
 }
 h3 {
-    margin: 60px;
-    font-size: 350%;
+  margin: 60px;
+  font-size: 350%;
 }
 
 .Iam {
-    transition: all 1s;
-    border-radius: 100%;
-    width: 45%;
-    margin-bottom: 3%;
+  transition: all 1s;
+  border-radius: 100%;
+  width: 45%;
+  margin-bottom: 3%;
 }
 
-
 h4 {
-    font-size: 280%;
-    margin-top: 13px;
+  font-size: 280%;
+  margin-top: 13px;
 }
 
 #projects {
-    display: grid;
-    grid-template-columns:  1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #git {
-    border: hidden;
-    box-shadow: none;
+  border: hidden;
+  box-shadow: none;
 }
 
 #projects > div {
-    width: 90%;
-    margin: 0 auto;
-    padding: 3%;
-    border-radius: 9px;
-    -webkit-box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
-    -moz-box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
-    box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
+  width: 90%;
+  margin: 0 auto;
+  padding: 3%;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
+  -moz-box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
+  box-shadow: 0 -1px 40px -7px rgba(44, 100, 200, 0.9);
 
-    display: grid;
-    grid-template-rows: 50px 180px 1fr 180px;
-
+  display: grid;
+  grid-template-rows: 50px 180px 1fr 180px;
 }
 
 #projects div img {
-    width: 90%;
-    height: 200px;
-    margin: 0 auto;
-    border-radius: 4px;
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 4px;
 }
 
 #projects div p {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 #projects div a {
-    font-size: 170%;
-    color: rgba(44, 100, 200, 0.9);
-    margin-bottom: 30%;
+  font-size: 170%;
+  color: rgba(44, 100, 200, 0.9);
+  margin-bottom: 30%;
 }
 
 #projects div a:hover {
-    color: rgba(44, 100, 200, 0.9);
+  color: rgba(44, 100, 200, 0.9);
 }
 
 footer {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 #social {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 150px;
-    margin-top: 100px;
-    width: 100%;
-
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 150px;
+  margin-top: 100px;
+  width: 100%;
 }
 
 #social > a i {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
-
 #social p {
-    align-self: flex-end;
-    margin-right: 15px;
-    margin-left: auto;
-    font-size: 140%;
+  align-self: flex-end;
+  margin-right: 15px;
+  margin-left: auto;
+  font-size: 140%;
 }
 
 #projects div a i {
-    margin: 40px;
+  margin: 40px;
 }
 
 .bar i {
-    display: block;
+  display: block;
 }
 
 #menu {
-    display: none;
+  display: none;
 }
 
-
 .pos {
-    position: fixed;
-    top: 80%;
-    right: 5%;
-
+  position: fixed;
+  top: 80%;
+  right: 5%;
 }
 
 .pos a {
-    font-size: 3px;
+  font-size: 3px;
 }
 
 @media (min-width: 651px) and (max-width: 900px) {
-    #git div p {
-        font-size: 25px;
-    }
+  #git div p {
+    font-size: 25px;
+  }
 
-    #menu {
-        display: none;
-        justify-content: space-between;
-    }
+  #menu {
+    display: none;
+    justify-content: space-between;
+  }
 
-    #projects {
-        width: 95%;
-    }
+  #projects {
+    width: 95%;
+  }
 
-    #projects div {
-        margin: 0 15%;
-    }
+  #projects div {
+    margin: 0 15%;
+  }
 
-    .bar {
-        margin-bottom: 5px;
-    }
+  .bar {
+    margin-bottom: 5px;
+  }
 
-    nav {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-    }
+  .bar i:first-child {
+    display: block;
+  }
 
-    .bar i:first-child {
-        display: block;
-    }
+  .bar i:hover {
+    background-color: red;
+  }
 
-    .bar i:hover {
-        background-color: red;
-    }
+  nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
 
-    nav {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-    }
-
-    .label a:hover {
-        color: rgb(44, 100, 200);
-        background-color: white;
-    }
+  .label a:hover {
+    color: rgb(44, 100, 200);
+    background-color: white;
+  }
 }
 
 @media (min-height: 200px) and (max-height: 500px) {
+  .label {
+    margin-top: 20px;
+  }
 
+  nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
 
-    .label {
-        margin-top: 20px;;
-    }
+  .label a {
+    width: 60%;
+    height: 100px;
+    font-size: 150%;
+  }
 
-    nav {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-    }
+  h1 {
+    font-size: 180%;
+  }
 
-    .label a {
-        width: 60%;
-        height: 100px;
-        font-size: 150%;
-    }
+  h2 {
+    font-size: 180%;
+    margin: 2%;
+  }
 
-    h1 {
-        font-size: 180%;
+  .label {
+    height: fit-content;
+  }
 
-    }
+  .label a {
+    height: 40px;
+    width: 40%;
+  }
 
-    h2 {
-        font-size: 180%;
-        margin: 2%;
-    }
-
-    .label {
-        height: fit-content;
-    }
-
-    .label a {
-        height: 40px;
-        width: 40%;
-    }
-
-    header {
-        background-position-y: 0;
-        font-size: 12px;
-    }
-
-
+  header {
+    background-position-y: 0;
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 100px) and (max-width: 650px) {
-    header {
-        background-position-y: 0;
-        font-size: 12px;
-    }
+  header {
+    background-position-y: 0;
+    font-size: 12px;
+  }
 
-    #projects div img {
-        width: 70%;
-    }
+  #projects div img {
+    width: 70%;
+  }
 
-    nav {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-    }
+  nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
 
-    .bar i:first-child {
-        display: block;
-    }
+  .bar i:first-child {
+    display: block;
+  }
 
+  .bar p {
+    font-size: 270%;
+  }
 
-    .bar p {
-        font-size: 270%;
-    }
+  .label {
+    margin-top: 80px;
+  }
 
-    .label {
-        margin-top: 80px;
-    }
+  .label a {
+    width: 45%;
+    height: 60px;
+  }
 
-    .label a {
-        width: 45%;
-        height: 60px;
-    }
+  h3 {
+    margin: 60px;
+    font-size: 380%;
+  }
 
-    h3 {
-        margin: 60px;
-        font-size: 380%;
-    }
+  section p {
+    font-size: 35px;
+  }
 
-    section p {
-        font-size: 35px;
-    }
+  #about-me p {
+    text-align: left;
+    font-size: 24px;
+  }
 
-    #about-me p {
-        text-align: left;
-        font-size: 24px;
-    }
+  #about-me ul li {
+    font-size: 18px;
+  }
 
-    #about-me ul li {
-        font-size: 18px;
-    }
+  .bar p {
+    font-size: 150%;
+  }
 
+  nav a {
+    font-size: 150%;
+  }
 
-    .bar p {
-        font-size: 150%;
-    }
+  h1 {
+    font-size: 300%;
+  }
 
-    nav a {
-        font-size: 150%;
-    }
+  h2 {
+    font-size: 160%;
+  }
 
-    h1 {
-        font-size: 300%;
-    }
+  h3 {
+    font-size: 280%;
+  }
 
-    h2 {
-        font-size: 160%;
-    }
+  h4 {
+    font-size: 200%;
+  }
 
-    h3 {
-        font-size: 280%;
-    }
+  #projects div p {
+    font-size: 24px;
+  }
 
-    h4 {
-        font-size: 200%;
-    }
+  #projects {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-    #projects div p {
-        font-size: 24px;
+  #projects div {
+    margin-bottom: 40px;
+  }
 
-    }
+  #social p {
+    align-self: flex-end;
+    margin-right: 5px;
+    margin-left: auto;
+    font-size: 100%;
+  }
 
-    #projects {
-        display: grid;
-        grid-template-columns:  1fr;
-    }
-
-    #projects div {
-        margin-bottom: 40px;
-
-    }
-
-
-    #social p {
-        align-self: flex-end;
-        margin-right: 5px;
-        margin-left: auto;
-        font-size: 100%;
-    }
-
-    footer a {
-        font-size: 100%;
-    }
+  footer a {
+    font-size: 100%;
+  }
 }
 
 @media (min-width: 1000px) {
+  .label {
+    margin-top: 180px;
+  }
 
-    .label {
-        margin-top: 180px;
-    }
+  .label a {
+    width: 280px;
+  }
 
-    .label a {
-        width: 280px;
-    }
+  .label {
+    height: 220px;
+  }
 
-    .label {
-        height: 220px;
-    }
+  .label h1 {
+    font-size: 64px;
+  }
 
-    .label h1 {
-        font-size: 64px;
-    }
+  .label h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  section {
+    width: 90%;
+    margin: 15% auto;
+    padding: 5px;
+    height: 10%;
+  }
 
-    .label h2 {
-        font-size: 36px;
-        margin-bottom: 20px;
-    }
-    section {
-        width: 90%;
-        margin: 15% auto;
-        padding: 5px;
-        height: 10%;
-    }
+  #about-me {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  #about-me div:first-child {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
 
-    #about-me {
-        background-color: black;
-        color: white;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .Iam {
+    align-self: center;
+    justify-content: center;
+    margin: auto 10%;
+    width: 60%;
+  }
 
-    #about-me div:first-child {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-    }
+  #about-me .information {
+    width: 50%;
+    margin: auto;
+  }
 
-    .Iam {
-        align-self: center;
-        justify-content: center;
-        margin: auto 10%;
-        width: 60%;
-    }
+  #about-me .information ul {
+    text-align: right;
+  }
 
-    #about-me .information {
-        width: 50%;
-        margin: auto;
-    }
+  #about-me p {
+    font-size: 28px;
+  }
 
-    #about-me .information ul {
-        text-align: right;
-    }
+  #git div img {
+    width: 65%;
+  }
 
+  #projects {
+    width: 100%;
+  }
 
-    #about-me p {
-        font-size: 28px;
-    }
+  #projects > div {
+    margin: 0 auto;
+    width: 80%;
+    height: 550px;
+  }
 
+  footer i {
+    margin-right: 40px;
+  }
 
-    #git div img {
-        width: 65%;
-    }
+  li {
+    list-style: none;
+  }
 
-    #projects {
-        width: 100%;
-    }
+  #menu {
+    display: block;
+  }
 
-    #projects > div {
-        margin: 0 auto;
-        width: 80%;
-        height: 550px;
-    }
+  #flechas {
+    display: none;
+  }
 
-    footer i {
-        margin-right: 40px;
-    }
+  .label a:hover {
+    color: rgb(44, 100, 200);
+    background-color: white;
+  }
 
-    li {
-        list-style: none;
-    }
-
-    #menu {
-        display: block;
-    }
-
-   #flechas {
-        display: none;
-    }
-
-    .label a:hover {
-        color: rgb(44, 100, 200);
-        background-color: white;
-    }
-
-
-    .information ul li {
-        font-size: 28px;
-    }
+  .information ul li {
+    font-size: 28px;
+  }
 }
-
-
-
-
-
-
-
